@@ -1,3 +1,19 @@
+# Task 1
+```bash
+Habib@AFG MINGW64 ~/Desktop/starter--near-sdk-as (main)
+$ near view $CONTRACT helloWorld
+View call: dev-1649781295729-88843388475327.helloWorld
+'hello habibullah'
+```
+
+# Task 2
+```bash
+Habib@AFG MINGW64 ~/Desktop/starter--near-sdk-as (main)
+$ near view $CONTRACT helloWorld '{"name": "Habibullah Turkmen"}'
+View call: dev-1649781295729-88843388475327.helloWorld({"name": "Habibullah Turkmen"})
+'hello Habibullah Turkmen'
+```
+
 # `near-sdk-as` Starter Kit
 
 This is a good project to use as a starting point for your AssemblyScript project.

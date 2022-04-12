@@ -1,17 +1,52 @@
-# Task 1
+## Task 1
 ```bash
+Habib@AFG MINGW64 ~/Desktop/starter--near-sdk-as (main)
+$ yarn build:release
+
+Habib@AFG MINGW64 ~/Desktop/starter--near-sdk-as (main)
+$ near dev-deploy ./build/release/simple.wasm
+
+Habib@AFG MINGW64 ~/Desktop/starter--near-sdk-as (main)
+$ export CONTRACT=dev-1649781295729-88843388475327
+
 Habib@AFG MINGW64 ~/Desktop/starter--near-sdk-as (main)
 $ near view $CONTRACT helloWorld
 View call: dev-1649781295729-88843388475327.helloWorld
 'hello habibullah'
 ```
 
-# Task 2
+## Task 2
 ```bash
+Habib@AFG MINGW64 ~/Desktop/starter--near-sdk-as (main)
+$ yarn build:release
+
+Habib@AFG MINGW64 ~/Desktop/starter--near-sdk-as (main)
+$ near dev-deploy ./build/release/simple.wasm
+
+Habib@AFG MINGW64 ~/Desktop/starter--near-sdk-as (main)
+$ export CONTRACT=dev-1649781295729-88843388475327
+
 Habib@AFG MINGW64 ~/Desktop/starter--near-sdk-as (main)
 $ near view $CONTRACT helloWorld '{"name": "Habibullah Turkmen"}'
 View call: dev-1649781295729-88843388475327.helloWorld({"name": "Habibullah Turkmen"})
 'hello Habibullah Turkmen'
+```
+
+## Task 3
+```bash
+Habib@AFG MINGW64 ~/Desktop/starter--near-sdk-as (main)
+$ yarn build:release
+
+Habib@AFG MINGW64 ~/Desktop/starter--near-sdk-as (main)
+$ near dev-deploy ./build/release/simple.wasm
+
+Habib@AFG MINGW64 ~/Desktop/starter--near-sdk-as (main)
+$ export CONTRACT=dev-1649781295729-88843388475327
+
+Habib@AFG MINGW64 ~/Desktop/starter--near-sdk-as (main)
+$ near view $CONTRACT helloWorld '{"names": ["Habibullah Turkmen", "Shafiqullah Turkmen"]}'
+View call: dev-1649781295729-88843388475327.helloWorld({"names": ["Habibullah Turkmen", "Shafiqullah Turkmen"]})
+'hello Habibullah Turkmen hello Shafiqullah Turkmen'
 ```
 
 # `near-sdk-as` Starter Kit

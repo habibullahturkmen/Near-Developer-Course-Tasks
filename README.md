@@ -49,6 +49,26 @@ View call: dev-1649781295729-88843388475327.helloWorld({"names": ["Habibullah Tu
 'hello Habibullah Turkmen hello Shafiqullah Turkmen'
 ```
 
+## Task 4
+```bash
+Habib@AFG MINGW64 ~/Desktop/starter--near-sdk-as (main)
+$ yarn build:release
+
+Habib@AFG MINGW64 ~/Desktop/starter--near-sdk-as (main)
+$ near dev-deploy ./build/release/simple.wasm
+
+Habib@AFG MINGW64 ~/Desktop/starter--near-sdk-as (main)
+$ export CONTRACT=dev-1649781295729-88843388475327
+
+Habib@AFG MINGW64 ~/Desktop/starter--near-sdk-as (main)
+$ near call $CONTRACT helloWorld --accountId habibullah_turkmen.testnet
+Scheduling a call: dev-1649781295729-88843388475327.helloWorld()
+...
+...
+https://explorer.testnet.near.org/transactions/C9SqgizrW1jrvEpmi3dKcPDPtCHQPPHP4haLizdVyptT
+'hello habibullah_turkmen.testnet'
+```
+
 # `near-sdk-as` Starter Kit
 
 This is a good project to use as a starting point for your AssemblyScript project.
